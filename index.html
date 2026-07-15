@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sephoc Motors Uganda | Buy & Sell Cars in Kampala</title>
+<meta name="description" content="Sephoc Motors Uganda - a one-stop car shopping centre in Naguru, Kampala. New, used and commercial vehicles for every budget.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>A one-stop car shopping centre in the country.</h1>
+      <p class="hero-sub">Even when you're after a Ferrari or a Rambo — get sorted at CADAM.</p>
+      <div class="hero-actions">
+        <a href="inventory.html" class="btn btn-primary">Find a car</a>
+        <a href="contact.html" class="btn btn-outline">Sell a car</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img id="hero-car-img" src="images/placeholder-car.jpg" alt="2023 Mercedes-Benz GLS 400d 4MATIC" class="hero-car-float">
+      <span class="hero-visual-caption">2023 Mercedes-Benz GLS 400d 4MATIC</span>
+    </div>
+  </div>
+</section>
+
+<section class="brand-ticker-wrap">
+  <div class="brand-ticker">
+    <div class="ticker-track" id="ticker-track">
+      <!-- duplicated in JS for seamless loop -->
+    </div>
+  </div>
+</section>
+
+<section class="search-bar-section">
+  <form class="search-bar" id="model-search-form" role="search">
+    <input type="text" id="model-search-input" placeholder="Search by model — e.g. Harrier, Prado, Forester" aria-label="Search by model">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</section>
+
+<section class="latest-arrivals">
+  <div class="section-heading">
+    <h2>Latest Arrivals</h2>
+    <a href="inventory.html" class="see-all-link">View all cars →</a>
+  </div>
+  <div class="car-grid" id="latest-arrivals-grid">
+    <!-- rendered by main.js -->
+  </div>
+  <div class="inventory-cta">
+    <p>We have over 100+ vehicles — take a look.</p>
+    <a href="inventory.html" class="btn btn-primary">View all cars</a>
+  </div>
+</section>
+
+<section class="contact-block" id="contact-block">
+  <div class="contact-block-inner">
+    <h2>Ready to drive home your next car?</h2>
+    <p>Tell us what you're after — or what you're selling — and we'll get back to you fast. No pressure, just straight answers.</p>
+    <form id="contact-form" class="contact-form">
+      <div class="form-row">
+        <input type="text" id="contact-name" placeholder="Your name" required>
+        <input type="tel" id="contact-phone" placeholder="Your phone number" required>
+      </div>
+      <textarea id="contact-message" placeholder="Tell us what you need — buying, selling, or just have a question" rows="4" required></textarea>
+      <div class="contact-buttons">
+        <button type="button" class="btn btn-contact btn-whatsapp" id="btn-whatsapp">WhatsApp</button>
+        <button type="button" class="btn btn-contact btn-call" id="btn-call">Call</button>
+        <button type="button" class="btn btn-contact btn-email" id="btn-email">Email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="float-bubble-placeholder"></div>
+
+<script src="cars-data.js"></script>
+<script src="partials.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
